@@ -104,4 +104,17 @@ input[type=text] {
     left: 50px;
 }
 
+.nav {
+    border-top: 2px solid black;
+    position: relative;
+    top: 420px;
+}
+
+.author {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 420px;
+    font-size: 15px;
+}
 
