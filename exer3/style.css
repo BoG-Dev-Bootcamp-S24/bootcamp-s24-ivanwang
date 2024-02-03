@@ -11,7 +11,6 @@ body {
     object-position: 10%;
     position: relative;
     left: 5px;
-    top: 5px;
 }
 
 #catProfile {
@@ -22,7 +21,7 @@ body {
     object-position: 10%;
     position: relative;
     right: 5px;
-    top: 5px;
+    order: 3;
 }
 
 .bar {
@@ -31,6 +30,7 @@ body {
     background-color: gray;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .webname {
@@ -67,4 +67,41 @@ body {
 input[type=text] {
     padding-left: 20px;
 }
+
+#enter {
+    width: 130px;
+    height: 55px;
+    background-color: gray;
+    top: 150px;
+    position: relative;
+    color: black;
+    border-radius: 30px;
+    font-size: 40px;
+    outline: none;
+    border: 2px solid black;
+    margin-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+.links {
+    justify-content: space-between;
+    margin-left: 40%;
+}
+
+.link {
+    background-color: aliceblue;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 60px;
+    left: 50px;
+}
+
 
