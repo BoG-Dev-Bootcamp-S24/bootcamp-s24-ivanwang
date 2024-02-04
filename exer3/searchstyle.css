@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #DDD0C8;
 }
 
 .bar {
@@ -19,7 +20,7 @@ body {
 .return {
     position: relative;
     left: 100px;
-    background-color: gray;
+    background-color: rgb(212, 209, 209);
     width: 100px;
     height: 30px;
     margin-top: 20px;
@@ -36,7 +37,7 @@ body {
 .catgle {
     position: relative;
     top: 20px;
-    background-color: gray;
+    background-color: rgb(212, 209, 209);
     width: 50%;
     height: 50px;
     border-radius: 30px;
@@ -58,8 +59,9 @@ body {
     margin-right: 500px;
     margin-left: 200px;
     margin-top: 40px;
-    background-color: gray;
-
+    background-color: rgb(212, 209, 209);
+    border: 1px solid gray;
+    padding-right: 20px;
 }
 
 .infoheading {
@@ -80,4 +82,5 @@ body {
     position: absolute;
     left: 1130px;
     bottom: 125px;
+    border: 1px solid black;
 }
