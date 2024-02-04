@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+.bar {
+    border: 1px solid black;
+    position: relative;
+    top: 30px;
+    margin-top: 0;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catgle {
+    position: relative;
+    top: 20px;
+    background-color: gray;
+    width: 50%;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid black;
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-right: 500px;
+    margin-left: 200px;
+    margin-top: 100px;
+    background-color: gray;
+}
+
+.infoheading {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.paragraph {
+    margin-top: 10px;
+}

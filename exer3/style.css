@@ -22,6 +22,7 @@ body {
     position: relative;
     right: 5px;
     order: 3;
+    margin-right: 20px;
 }
 
 .bar {
@@ -70,19 +71,19 @@ input[type=text] {
 
 #enter {
     width: 130px;
-    height: 55px;
+    height: 48px;
     background-color: gray;
     top: 150px;
     position: relative;
     color: black;
     border-radius: 30px;
-    font-size: 40px;
+    font-size: 30px;
     outline: none;
     border: 2px solid black;
     margin-left: 20px;
     text-align: center;
     text-decoration: none;
-    padding-top: 5px;
+    padding-top: 12px;
 }
 
 .links {
@@ -117,4 +118,5 @@ input[type=text] {
     top: 420px;
     font-size: 15px;
 }
+
 
