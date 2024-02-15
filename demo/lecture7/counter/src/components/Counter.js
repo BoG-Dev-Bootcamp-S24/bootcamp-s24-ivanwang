@@ -29,8 +29,8 @@ function Counter() {
     return (
       <div className="counter">
         <h1>Counter: {count}</h1>
-        <IncrementButton onIncrement={setCount} />
-        <ResetButton onReset={setCount} />
+        <IncrementButton setCount={setCount} />
+        <ResetButton setCount={setCount} />
       </div>
     );
   }
