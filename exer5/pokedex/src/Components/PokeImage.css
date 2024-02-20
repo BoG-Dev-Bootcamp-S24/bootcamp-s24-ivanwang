@@ -1,0 +1,10 @@
+.pokemonImageDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemonImage {
+    border: 2px black solid;
+}

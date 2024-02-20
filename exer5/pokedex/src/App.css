@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.head {
+  font-size: 40px;
+}
+
+.outerDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.pokeDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.directionButton {
+  background-color: lightgrey;
+  width: 140px;
+  height: 60px;
+  font-size: 50px;
+  border-radius: 10px;
+  border: 0px;
+}
+
