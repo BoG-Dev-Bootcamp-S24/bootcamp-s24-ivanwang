@@ -17,9 +17,10 @@
 }
 
 p {
-    margin-top: 8px;
+    margin-top: 6px;
     margin-left: 5px;
     margin-right: 5px;
+    border: 3px rgb(250, 208, 208) solid;
 }
 
 .fairy {

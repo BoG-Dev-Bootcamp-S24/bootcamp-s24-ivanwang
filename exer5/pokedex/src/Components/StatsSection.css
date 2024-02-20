@@ -17,6 +17,10 @@
     overflow: hidden;
     margin-bottom: 0;
     margin-top: 0;
-    border: 2px black solid;
+    border: 7px rgb(250, 208, 208) solid;
+}
+
+.statH2 {
+    margin-top: 0;
 }
 

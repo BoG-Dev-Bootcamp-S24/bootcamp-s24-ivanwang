@@ -9,7 +9,7 @@ function App() {
   const [id, setId] = useState(1);
   const [pokemonJSON, setPokemonJSON] = useState(null);
   const [stats, setStats] = useState(true);
-  const [info, setInfo] = useState('#4CAF50'); 
+  const [info, setInfo] = useState('#78C850'); 
   const [moves, setMoves] = useState('#E0E0E0');
 
   const URL = "https://pokeapi.co/api/v2/pokemon";
@@ -63,7 +63,7 @@ function App() {
 
               <button className='directionButton' onClick={() => {
                 setStats(true);
-                setInfo('#4CAF50');
+                setInfo('#78C850');
                 setMoves('#E0E0E0');
               }}style={{ backgroundColor: info }}>
                 Info
@@ -72,7 +72,7 @@ function App() {
               <button className='directionButton' onClick={() => {
                 setStats(false);
                 setInfo('#E0E0E0');
-                setMoves('#4CAF50');
+                setMoves('#78C850');
               }}style={{ backgroundColor: moves }}>
                 Moves
               </button>

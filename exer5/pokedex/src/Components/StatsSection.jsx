@@ -11,7 +11,7 @@ function StatsSection({ json, stats }) {
     if (stats) {
         return (
             <div className='infoDiv'>
-                <h2 className='info'>
+                <h2 className='statH2'>
                     Info
                 </h2>
                 <ul className='infoUl'>
@@ -29,7 +29,7 @@ function StatsSection({ json, stats }) {
     } else {
         return (
             <div className='infoDiv'>
-                <h2 className='moves'>
+                <h2 className='statH2'>
                     Moves
                 </h2>
                 <ul className='infoUl'>
