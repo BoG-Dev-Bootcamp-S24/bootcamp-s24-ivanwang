@@ -1,7 +1,6 @@
 .infoDiv {
     display: flex;
     flex-direction: column;
-    background-color: blue;
     align-items: center;
 }
 
@@ -9,14 +8,15 @@
     display: flex;
     flex-direction: column;
     list-style: none;
-    background-color: bisque;
+    background-color: rgb(232, 230, 230);
     align-items: start;
     width: 300px;
-    height: 360px;
-    padding-top: 20px;
+    height: 350px;
+    padding-top: 10px;
     padding-left: 20px;
     overflow: hidden;
     margin-bottom: 0;
     margin-top: 0;
+    border: 2px black solid;
 }
 

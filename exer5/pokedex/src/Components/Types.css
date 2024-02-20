@@ -1,0 +1,159 @@
+.typeDiv {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.typeText {
+    margin-top: 6px;
+    margin-bottom: 0;
+    padding-right: 10px;
+}
+
+.typingDiv {
+    display: flex;
+    justify-content: start;
+    width: 200px;
+}
+
+p {
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.fairy {
+    background-color: #D685AD;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.steel {
+    background-color: #B7B7CE;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.dark {
+    background-color: #705848;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.dragon {
+    background-color: #7038F8;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.ghost {
+    background-color: #705898;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.rock {
+    background-color: #B8A038;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.bug {
+    background-color: #A8B820;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.flying {
+    background-color: #A890F0;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.poison {
+    background-color: #A040A0;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.ground {
+    background-color: #E0C068;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.psychic {
+    background-color: #F85888;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.ice {
+    background-color: #98D8D8;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.water {
+    background-color: #6890F0;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.electric {
+    background-color: #F8D030;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.fire {
+    background-color: #F08030;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.grass {
+    background-color: #78C850;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+.normal {
+    background-color: #A8A878;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}

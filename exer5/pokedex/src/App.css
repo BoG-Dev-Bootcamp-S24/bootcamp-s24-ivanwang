@@ -50,7 +50,6 @@
 .pokeDiv {
   display: flex;
   flex-direction: column;
-  background-color: #61dafb;
   width: 50%;
   height: 105%;
   justify-content: space-between;
@@ -59,7 +58,6 @@
 .statsDiv {
   display: flex;
   flex-direction: column;
-  background-color: blueviolet;
   width: 50%;
   height: 105%;
   justify-content: space-between;
@@ -69,7 +67,6 @@
   display: flex;
   justify-content: center;
   align-items: end;
-  background-color: yellowgreen;
   position: relative;
 }
 

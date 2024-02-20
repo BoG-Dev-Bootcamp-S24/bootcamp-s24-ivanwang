@@ -3,6 +3,7 @@ import './App.css';
 import React, {useState, useEffect} from 'react';
 import PokeImage from './Components/PokeImage';
 import StatsSection from './Components/StatsSection';
+import Types from './Components/Types';
 
 function App() {
   const [id, setId] = useState(1);
@@ -39,6 +40,7 @@ function App() {
         <div className = "outerDiv">
           <div className = "pokeDiv">
             <PokeImage json = {pokemonJSON}></PokeImage>
+            <Types json = {pokemonJSON}></Types>
             <div className='buttonDiv'>
               <button className='directionButton' onClick={() => {
                 if (id !== 1) {
