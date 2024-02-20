@@ -2,10 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import React, {useState, useEffect} from 'react';
 import PokeImage from './Components/PokeImage';
+import StatsSection from './Components/StatsSection';
 
 function App() {
   const [id, setId] = useState(1);
   const [pokemonJSON, setPokemonJSON] = useState(null);
+  const [stats, setStats] = useState(true);
+  const [info, setInfo] = useState('#4CAF50'); 
+  const [moves, setMoves] = useState('#E0E0E0');
 
   const URL = "https://pokeapi.co/api/v2/pokemon";
 
@@ -34,23 +38,45 @@ function App() {
         </h1>
         <div className = "outerDiv">
           <div className = "pokeDiv">
-            <PokeImage json={pokemonJSON}/>
+            <PokeImage json = {pokemonJSON}></PokeImage>
+            <div className='buttonDiv'>
+              <button className='directionButton' onClick={() => {
+                if (id !== 1) {
+                  setId(id - 1);
+                }
+              }}>
+                &lt;
+              </button>
 
-            <button className='directionButton' onClick={() => {
-              if (id !== 1) {
-                setId(id - 1);
-              }
-            }}>
-              &lt;
-            </button>
-
-            <button className='directionButton' onClick={() => {
-              setId(id + 1);
-            }}>
-              &gt;
-            </button>
-
+              <button className='directionButton' onClick={() => {
+                setId(id + 1);
+              }}>
+                &gt;
+              </button>
+            </div>
           </div>
+          <div className='statsDiv'>
+            <StatsSection json = {pokemonJSON} stats = {stats}></StatsSection>
+            <div className='buttonDiv'>
+
+              <button className='directionButton' onClick={() => {
+                setStats(true);
+                setInfo('#4CAF50');
+                setMoves('#E0E0E0');
+              }}style={{ backgroundColor: info }}>
+                Info
+              </button>
+
+              <button className='directionButton' onClick={() => {
+                setStats(false);
+                setInfo('#E0E0E0');
+                setMoves('#4CAF50');
+              }}style={{ backgroundColor: moves }}>
+                Moves
+              </button>
+
+            </div>
+         </div>
         </div>
       </body>
     </div>

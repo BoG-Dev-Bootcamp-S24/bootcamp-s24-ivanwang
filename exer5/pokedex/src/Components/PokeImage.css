@@ -7,4 +7,12 @@
 
 .pokemonImage {
     border: 2px black solid;
+    width: 300px;
+}
+
+.pokeText {
+    background-color: bisque;
+    width: 300px;
+    height: 40px;
+    padding-top: 15px;
 }

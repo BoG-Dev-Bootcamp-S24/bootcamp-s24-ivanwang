@@ -1,13 +1,15 @@
 import React from 'react';
-import './PokeImage.css'
+import './PokeImage.css';
 
 function PokeImage({ json }) {
     if (json == null) {
         return null;
     }
 
-    const {name, sprite} = json;
-    const image = sprite && sprite.front_default;
+    console.log('json', json);
+
+    const {name, sprites} = json;
+    const image = sprites && sprites.front_default;
 
     console.log('image', image);
 
