@@ -2,7 +2,7 @@
 let countryNotes = {};
 
 export default async function handler(req, res) {
-  const { code } = req.query;
+  const code = req.query.code;
   console.log(req.query)
 
   try {
@@ -16,10 +16,7 @@ export default async function handler(req, res) {
       case 'POST':
         // Add or update a note for a country
         let countryInfo = {};
-        if (!code) {
-            res.status(400).json({ message: 'Country code is required' });
-            break;
-          }
+
         const response = await fetch(`https://restcountries.com/v3.1/alpha/${code}`);
         
         if (!response.ok) {
@@ -39,15 +36,16 @@ export default async function handler(req, res) {
         break;
 
       case 'PUT':
-        const { note: updatedNote } = req.body;
-        if (!code || !updatedNote) {
+        const newNote = JSON.parse(req.body).note
+        console.log(JSON.parse(req.body).note)
+        if (!code || !newNote) {
             res.status(400).json({ message: 'Country code and note are required' });
             break;
           }
         if (!countryNotes[code]) {
           throw new Error('Note not found.');
         }
-        countryNotes[code] = updatedNote;
+        countryNotes[code] = newNote;
         res.status(200).json({ message: `Note updated for ${code}` });
         break;
 
