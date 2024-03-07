@@ -15,7 +15,7 @@ export default async function handler(req, res) {
         pokeData.types.forEach(e => {
             types.push(e.type.name);  
         })
-        const newPokeData = {"pokemonName" : pokeData.forms[0].name, "sprite" : pokeData.sprites.front_default, "types" : types }
+        const newPokeData = {"PokemonName": pokeData.forms[0].name, "Sprite" : pokeData.sprites.front_default, "Types" : types }
         res.status(200).json(newPokeData)
     }
 }

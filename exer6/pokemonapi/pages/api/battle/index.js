@@ -12,13 +12,13 @@ export default async function handler(req, res) {
             if (!poke1 || !poke2) {
                 res.status(400).json({error: "both pokemon need to have names"});
             }
-            let temp1 = URL + poke1;
+            const temp1 = URL + poke1;
             const response1 = await fetch(temp1);
-            const data1 = response1.json();
+            const data1 = await response1.json();
 
-            let temp2 = URL + poke2;
+            const temp2 = URL + poke2;
             const response2 = await fetch(temp2);
-            const data2 = response2.json();
+            const data2 = await response2.json();
 
             let pokeStats1 = 0;
             let pokeStats2 = 0;
