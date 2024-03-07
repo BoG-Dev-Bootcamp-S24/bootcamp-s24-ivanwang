@@ -1,3 +1,4 @@
+Video: https://drive.google.com/file/d/1-glswj9679eX9O6kmAvyLWkN24u_keSS/view?usp=sharing
 # Exercise 6 - Poké API
 
 ## Description
