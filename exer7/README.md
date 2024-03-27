@@ -1,3 +1,4 @@
+Video: https://drive.google.com/file/d/12ZdyPafYvcK2qNDKcWp6dcPEVMuG6QLu/view?usp=sharing
 # Exercise 7 - Train Tickets DB
 
 ## Description
