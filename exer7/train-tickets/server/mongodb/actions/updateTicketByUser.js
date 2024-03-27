@@ -1,19 +1,22 @@
 import connectDB from "..";
 import Ticket from "../models/Ticket";
-import User from "../models/User";
 
-export default async function updateTicketByUser(TicketInfo) {
+export default async function updateTicketByUser(data) {
     try {
         await connectDB();
-        if (!(await User.findById({_id: TicketInfo.UserID}))) {
-            return []
+        const { ticketId, userId } = data;
+        const updatedTicket = await Ticket.findByIdAndUpdate(
+            ticketId,
+            userId,
+            { new: true }
+        );
+        if (updatedTicket) {
+            return true;
+        } else {
+            return false;
         }
-        const data = await Ticket.findByIdAndUpdate({_id: TicketInfo.TicketID}, {userId: TicketInfo.UserID})
-        if (!data) {
-            return "NoTix"
-        }
-        return data;
-    } catch (error) {
-        return false
+    }
+    catch (error) {
+        return false;
     }
 }
